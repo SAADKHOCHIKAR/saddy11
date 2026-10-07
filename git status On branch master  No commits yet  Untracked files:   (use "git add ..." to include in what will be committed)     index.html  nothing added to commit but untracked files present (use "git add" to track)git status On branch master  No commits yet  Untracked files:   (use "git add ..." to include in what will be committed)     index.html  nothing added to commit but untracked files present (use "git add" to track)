@@ -1,73 +1,24 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GitHub Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f8fa;
-            text-align: center;
-        }
-
-        .login {
-            background-color: white;
-            width: 300px;
-            margin: 50px auto;
-            padding: 25px;
-            border: 1px solid #d1d5da;
-            border-radius: 8px;
-        }
-
-        h2 {
-            color: #24292f;
-        }
-
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #d1d5da;
-            border-radius: 5px;
-        }
-
-        button {
-            width: 98%;
-            padding: 10px;
-            background-color: #238636;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #2ea043;
-        }
-
-        p {
-            font-size: 14px;
-        }
-    </style>
+    <title>Login Form</title>
 </head>
 <body>
 
-    <div class="login">
-        <h2>GitHub</h2>
-        <h3>Sign in to GitHub</h3>
+    <h2>Login Form</h2>
 
-        <form>
-            <label>Username or email address</label>
-            <input type="text" placeholder="Enter username" required>
+    <form>
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        <br><br>
 
-            <label>Password</label>
-            <input type="password" placeholder="Enter password" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <br><br>
 
-            <button type="submit">Sign in</button>
-        </form>
-
-        <p>New to GitHub? <a href="#">Create an account</a></p>
-    </div>
+        <input type="submit" value="Login">
+        <input type="reset" value="Cancel">
+    </form>
 
 </body>
 </html>
